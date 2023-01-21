@@ -50,15 +50,28 @@ body::before {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    perspective: 3000px;
 }
 
 
 .s-card {
     border: 0.5em solid white;
-    width: calc(100% / 3 - 8%);
+    width: calc(100vw / 3 - 10);
     height: 70vh;
-    position: relative;
+    position: absolute;
     transition: filter .5s ease-in-out;
+}
+
+.s-card:nth-child(1) {
+    transform: rotateY(0deg) translateZ(50vw);
+}
+
+.s-card:nth-child(2) {
+    transform: rotateY(120deg) translateZ(50vw);
+}
+
+.s-card:nth-child(3) {
+    transform: rotateY(240deg) translateZ(50vw);
 }
 
 .s-card__background {
@@ -90,11 +103,13 @@ body::before {
 
 
 .s-controller {
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 3rem;
+    bottom: 1.5rem;
+    width: 100%;
 }
 
 .s-controller__button {
@@ -121,6 +136,13 @@ body::before {
 .s-controller__button:nth-child(2) {/*pegar o 2º elemento antes da classe antes dos 2 pontos */
    margin: 0 3.75rem;
 } 
+
+.s-controller__button--active {
+    background-color: white;
+    color: var(--cor1);
+    border: 0.1875rem solid var(--cor1);
+    outline: 0.125rem solid white; /*cria outra borda no botão*/
+}
 
 .s-controller__line {
     background-color: white;
@@ -168,4 +190,26 @@ body[id^="spider-man-"] .s-card:not(.s-card--hovered) { /* pegar todos os cards 
 
 .s-card--hovered .s-card__title {
     bottom: 50%; /*título no meio ao passar o mouse */
+}
+
+
+
+/*
+x = horizontal
+y = vertical
+z = profundidade
+
+transform: translate (permite mover o elemento da atual posição de acordo com o eixo x, y ou z).
+
+rotate (permite rotacionar o elemento no eixo x, y ou z).
+
+perspective (define quão longe um elemento está longe do usuário, um valor mais baixo será um efeito mais 3D
+*/
+
+
+.s-cards-carousel {
+    display: flex;
+    justify-content: center;
+    width: calc(100vw / 3 - 10%);
+    transform-style: preserve-3d; /* para que os elementos filhos do elemento que está sendo colocado o carrossel mantenha suas configurações */
 }
