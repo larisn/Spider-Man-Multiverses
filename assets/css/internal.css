@@ -51,13 +51,36 @@
     justify-content: flex-end; /* a div é colocada de baixo pra cima na página (por algum motivo não funcionou, resolvi colocando um padding) */ 
 }
 
+
+
 .s-wrapper .s-main-content .s-logo img {
     margin-top: 50px;
-    margin-left: 0;
+    margin-left: -6px;
     margin-bottom: 30px;
     padding-bottom: 15px;
-    padding-left: 10px;
 }
+
+.s-wrapper .s-main-content .s-logo2 img {
+    margin-top: 40px;
+    margin-left: -22px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+.s-wrapper .s-main-content .s-logo3 img {
+    margin-top: 20px;
+    margin-left: -9px;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+}
+
+.s-wrapper .s-main-content .s-logo-a img {
+    margin-top: 20px;
+    margin-left: -9px;
+    padding-bottom: 15px;
+}
+
+
 
 .s-wrapper .s-main-content__top .s-description {
     background-color: rgba(0, 0, 0, 0.7);
@@ -69,6 +92,7 @@
 .s-wrapper .s-main-content__top .s-description .s-description__text p {
     color: white;
     line-height: 170%;
+    text-align: justify;
 }
 
 .s-wrapper .s-main-content__top .s-description .pills {
