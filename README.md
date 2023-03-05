@@ -1,4 +1,4 @@
-# Spider-Man-Multiverses
+# Spider Man Multiverses
 ### Criando uma home page inspirada nos multiversos do Homem Aranha 
 
 O intuito é praticar HTML, CSS e um pouco de JavaScript. O site vai conter menus interativos com os atores que fazem parte do universo do Homem Aranha, terá cards em carrossel 3D e algumas animações ao passar o mouse.
