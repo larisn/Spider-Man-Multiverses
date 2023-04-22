@@ -2,7 +2,7 @@
 🕸<br>Spider Man Multiverses
 </h1>
 
-[Preview](https://github.com/larisn/spider-man-multiverses/blob/main/assets/imagens/Screenshot_1.png)
+![Preview](https://github.com/larisn/spider-man-multiverses/blob/main/assets/imagens/Screenshot_1.png)
 
 ## 🕷 Sobre
 
