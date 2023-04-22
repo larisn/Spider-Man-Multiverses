@@ -20,7 +20,7 @@ function addEventListenersToCards() {
 }
 
 document.addEventListener("DOMContentLoaded", addEventListenersToCards, false);
- 
+
 function selectCarouselItem(selectedButtonElement) {
     const selectedItem = selectedButtonElement.id;
     const carousel = document.querySelector('.s-cards-carousel');
@@ -33,6 +33,5 @@ function selectCarouselItem(selectedButtonElement) {
 
     const activeButtonElement = document.querySelector('.s-controller__button--active');
     activeButtonElement.classList.remove('s-controller__button--active');
-    selectedButtonElement.classList.add('s-controller__button--active');
-
+    selectedButtonElement.classList.add('s-controller__button--active'); 
 }
